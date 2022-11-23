@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import Courses from './components/Course/Courses'
+import Header from './components/Header/Header'
+import Profile from './components/Account/Profile';
+import Chessground from './components/Chessboard/Chessground';
+import { Helmet } from 'react-helmet';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Helmet>
+        <title>ChessWorkz</title>
+        <meta name="description" content="Testing icon and titles" />
+    </Helmet>
+      <Header/>
+      <Profile/>
+      <Chessground/>
+      <Courses/>
     </div>
   );
 }
