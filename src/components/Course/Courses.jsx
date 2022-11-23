@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react'
+import { Container, Row } from 'react-bootstrap'
 import { getAllCourses } from '../../api/courseService'
 import {Course} from './Course'
 
@@ -15,18 +16,18 @@ function Courses() {
 
   return (
     <div>
-        <div className="container">
+        <Container>
+          <Row>
             {courses.map((course) => {
                     return (
-                        <div>
                             <Course
                             courseId={course.courseId}
                             courseName={course.courseName}
                             courseDescription={course.courseDescription}/>
-                        </div>
                     );
                 })}
-          </div>
+                </Row>
+          </Container>
         </div>
   )
 }

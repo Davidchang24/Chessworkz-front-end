@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 export const Course = ({courseId, courseName, courseDescription}) => {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" />
+      <Card.Img variant="top" src="https://www.chess.com/bundles/web/images/offline-play/standardboard.1d6f9426.png" />
       <Card.Body>
         <Card.Title>{courseName}</Card.Title>
         <Card.Text>
