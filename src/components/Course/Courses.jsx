@@ -20,6 +20,7 @@ function Courses() {
           <Row>
             {courses.map((course) => {
                     return (
+                      
                             <Course
                             courseId={course.courseId}
                             courseName={course.courseName}
