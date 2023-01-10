@@ -1,24 +1,29 @@
-import React from 'react';
-import Courses from './components/Course/Courses'
-import Header from './components/Header/Header'
-import Profile from './components/Account/Profile';
-import Chessground from './components/Chessboard/Chessground';
-import { Helmet } from 'react-helmet';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import { Helmet } from "react-helmet";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Home from "./Home";
+import Tools from "./Tools";
+import Profile from "./components/Account/Profile";
 
 function App() {
   return (
-    <div>
-      <Helmet>
-        <title>ChessWorkz</title>
-        <meta name="description" content="Testing icon and titles" />
-    </Helmet>
-      <Header/>
-      <Profile/>
-      <Chessground/>
-      <Courses/>
-    </div>
+    <Router>
+      <div>
+        <Helmet>
+          <title>ChessWorkz</title>
+          <meta name="description" content="Testing icon and titles" />
+        </Helmet>
+        <Header />
+        <Profile />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/tools" element={<Tools />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
