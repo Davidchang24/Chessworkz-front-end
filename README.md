@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![ci](https://github.com/Davidchang24/Chessworkz-front-end/actions/workflows/cypress.yml/badge.svg?branch=main)](https://github.com/Davidchang24/Chessworkz-front-end/actions/workflows/cypress.yml)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
