@@ -6,7 +6,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Home from "./Home";
 import Tools from "./Tools";
-import Profile from "./components/Account/Profile";
+import Courses from "./components/Course/Courses";
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
           <meta name="description" content="Testing icon and titles" />
         </Helmet>
         <Header />
-        <Profile />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/courses" element={<Courses />} />
           <Route exact path="/tools" element={<Tools />} />
         </Routes>
       </div>

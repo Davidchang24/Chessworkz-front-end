@@ -11,7 +11,7 @@ export const Course = ({courseId, courseName, courseDescription}) => {
         <Card.Text>
           {courseDescription}
         </Card.Text>
-        <Button variant="primary">Go to Course</Button>
+        <Button href="/coursepage" variant="primary">Follow</Button>
       </Card.Body>
     </Card>
   )
