@@ -3,20 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Auth0Provider } from "@auth0/auth0-react";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Auth0Provider
-      domain="dev-sjro5t814w4puje2.us.auth0.com"
-      clientId="BiHhkTyhXq7iU1cRSXmO9JOuSV66RQBt"
-      redirectUri={window.location.origin}
-      audience="https://dev-sjro5t814w4puje2.us.auth0.com/api/v2/"
-      scope="read:current_user update:current_user_metadata"
-    >
+    <GoogleOAuthProvider clientId="326613118441-qrt5pkv197pvuhed8vbfla1pnajpnff5.apps.googleusercontent.com">
       <App />
-    </Auth0Provider>
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );
 

@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React from 'react';
 import Login from '../Account/Login';
-import Logout from '../Account/Logout';
 
 function Header() {
   return (
@@ -17,11 +16,10 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action2">Courses</Nav.Link>
+            <Nav.Link href="/courses">Courses</Nav.Link>
             <Nav.Link href="/tools">Tools</Nav.Link>
           </Nav>
-          <Login/>
-          <Logout/>
+            <Login/>
         </Navbar.Collapse>
       </Container>
     </Navbar>
