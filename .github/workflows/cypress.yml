@@ -5,4 +5,6 @@ jobs:
     # use the reusable workflow to check out the code, install dependencies
     # and run the Cypress tests
     # https://github.com/bahmutov/cypress-workflows
-    uses: davidchang24/cypress-workflows/.github/workflows/standard.yml@v1
+    uses: bahmutov/cypress-workflows/.github/workflows/standard.yml@v1
+    with:
+      start: "npm start"
