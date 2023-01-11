@@ -1,8 +1,8 @@
 import React from "react"
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import FollowButton from "../Button/FollowButton";
 
-export const Course = ({courseId, courseName, courseDescription}) => {
+export const Course = ({ courseId, courseName, courseDescription }) => {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="https://www.chess.com/bundles/web/images/offline-play/standardboard.1d6f9426.png" />
@@ -11,7 +11,7 @@ export const Course = ({courseId, courseName, courseDescription}) => {
         <Card.Text>
           {courseDescription}
         </Card.Text>
-        <Button href="/coursepage" variant="primary">Follow</Button>
+        <FollowButton courseId={courseId} />
       </Card.Body>
     </Card>
   )
