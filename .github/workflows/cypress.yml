@@ -1,4 +1,4 @@
-name: ci
+name: Cypress Tests
 on: [push]
 jobs:
   test:
