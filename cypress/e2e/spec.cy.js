@@ -19,10 +19,8 @@ describe("Navigation bar links", () => {
 
 describe("Follow course", () => {
   it("Following a course works correctly", () => {
-    /* ==== Generated with Cypress Studio ==== */
     cy.visit("https://chessworkz-frontend.azurewebsites.net/");
     cy.get(":nth-child(1) > .card-body > :nth-child(3) > button").click();
     cy.contains("Follow has been saved").should("be.visible");
-    /* ==== End Cypress Studio ==== */
   });
 });
